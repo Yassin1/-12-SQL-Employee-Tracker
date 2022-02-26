@@ -7,10 +7,7 @@ function getAllDepartments() {
         let sql = `SELECT *FROM department`;
         conn.execute(sql, function (err, result, fields) {
 
-            if (err) {
-                console.log(err);
-                return reject(false)
-            }
+            if (err) return reject(false);
             return resolve(result);
         });
     });

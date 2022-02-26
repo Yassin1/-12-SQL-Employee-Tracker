@@ -15,8 +15,8 @@ const MENU_LIMIT = {
 
 /*== Invoke ==*/
 
-//showMenu();
-viewAllDepartments();
+showMenu();
+
 
 
 /*== MENU ==*/

@@ -1,7 +1,10 @@
 
+
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
+
+
 
 
 
@@ -12,15 +15,11 @@ CREATE TABLE `department` (
 
 
 
-
 INSERT INTO `department` (`id`, `name`) VALUES
 (4, 'Marketing'),
 (5, 'Sales'),
 (6, 'Development'),
 (7, 'Research');
-
-
-
 
 
 
@@ -33,6 +32,7 @@ CREATE TABLE `employee` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 
+
 INSERT INTO `employee` (`id`, `first_name`, `last_name`, `role_id`, `manager_id`) VALUES
 (3, 'Sam', 'Parker', 5, 4),
 (4, 'David', 'Jones', 7, NULL),
@@ -41,6 +41,7 @@ INSERT INTO `employee` (`id`, `first_name`, `last_name`, `role_id`, `manager_id`
 (7, 'Bestow', 'Rynes', 5, 4),
 (8, 'Drake', 'Jhons', 8, 6),
 (9, 'Lara', 'P.', 9, 4);
+
 
 
 CREATE TABLE `role` (
@@ -62,10 +63,10 @@ INSERT INTO `role` (`id`, `title`, `salary`, `department_id`) VALUES
 (10, 'Testers', '900', 5);
 
 
+
+
 ALTER TABLE `department`
   ADD PRIMARY KEY (`id`);
-
-
 
 
 ALTER TABLE `employee`
